@@ -3,9 +3,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/rainline00/joseki-craft-lab/badge.svg?branch=main)](https://coveralls.io/github/rainline00/joseki-craft-lab?branch=main)
 [![Dependency Status](https://david-dm.org/rainline00/joseki-craft-lab.svg)](https://david-dm.org/rainline00/joseki-craft-lab)
 ![License](https://img.shields.io/github/license/rainline00/joseki-craft-lab)
-![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)
-![TypeScript](https://badgen.net/badge/TypeScript/4.0/blue)
-![React](https://img.shields.io/badge/react-17.0.2-blue)
+![Python Version](https://img.shields.io/badge/python-3.12+-blue.svg)
+![TypeScript](https://badgen.net/badge/TypeScript/4.9.5/blue)
+![React](https://img.shields.io/badge/react-18.3.1-blue)
 
 Joseki Craft Lab（定跡クラフトラボ）は、将棋の定跡（序盤戦略）を作成、管理、分析するための革新的なツールです。グラフデータベース技術を活用することで、将棋の複雑な序盤手順を探索し理解するためのユニークで強力な方法を提供します。
 
