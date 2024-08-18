@@ -1,4 +1,4 @@
-name: CI
+name: Frontend CI
 
 on:
   push:
@@ -24,9 +24,11 @@ jobs:
         node-version: '18' # Node.js のバージョンを指定
 
     - name: Install dependencies
+      working-directory: frontend
       run: npm install
 
     - name: Run tests
+      working-directory: frontend
       run: npm test -- --watchAll=false --ci
       env:
         CI: true
