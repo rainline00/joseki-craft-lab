@@ -1,0 +1,19 @@
+services:
+  memgraph:
+    build:
+      context: .
+      dockerfile: ./memgraph.Dockerfile
+    ports:
+      - "7687:7687"
+    volumes:
+      - mg_lib:/var/lib/memgraph
+      - mg_log:/var/log/memgraph
+    environment:
+      - MEMGRAPH_USER=memgraph
+      - MEMGRAPH_PASSWORD=memgraph
+    env_file:
+      - ../backend/.env
+
+volumes:
+  mg_lib:
+  mg_log:
