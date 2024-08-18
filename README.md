@@ -1,11 +1,9 @@
 # Joseki Craft Lab（定跡クラフトラボ）
+<!-- ![Build Status](https://github.com/rainline00/joseki-craft-lab/actions/workflows/backend-ci.yml/badge.svg) -->
 ![Build Status](https://github.com/rainline00/joseki-craft-lab/actions/workflows/frontend-ci.yml/badge.svg)
-![Build Status](https://github.com/rainline00/joseki-craft-lab/actions/workflows/`backend-ci.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/rainline00/joseki-craft-lab/badge.svg?branch=main)](https://coveralls.io/github/rainline00/joseki-craft-lab?branch=main)
-[![Dependency Status](https://david-dm.org/rainline00/joseki-craft-lab/status.svg?path=frontend)](https://david-dm.org/rainline00/joseki-craft-lab?path=frontend)
-
 ![License](https://img.shields.io/github/license/rainline00/joseki-craft-lab)
-![Python Version](https://img.shields.io/badge/python-3.12+-blue.svg)
+![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)
 ![TypeScript](https://badgen.net/badge/TypeScript/4.9.5/blue)
 ![React](https://img.shields.io/badge/react-18.3.1-blue)
 
