@@ -1,5 +1,5 @@
 project:
-  name: 将棋序盤知識整理アプリケーション開発
+  name: Joseki Craft Lab Development
   milestones:
     - name: フェーズ1：環境セットアップ
       due_date: 2024-09-10
