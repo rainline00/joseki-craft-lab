@@ -9,18 +9,16 @@ g = Github(os.environ['GITHUB_TOKEN'])
 # リポジトリの取得
 repo = g.get_repo(os.environ['GITHUB_REPOSITORY'])
 
-# プロジェクト構造YAMLファイルの読み込み
-with open('.github/project-structure.yml', 'r') as file:
-    project_structure = yaml.safe_load(file)
-
-# プロジェクト名の取得
-project_name = project_structure['project']['name']
-
 # プロジェクトの作成（既に存在する場合はスキップ）
 projects = list(repo.get_projects())
 project = next((p for p in projects if p.name == project_name), None)
 if project is None:
-    project = repo.create_project(project_name, body="将棋序盤知識整理アプリケーション開発プロジェクト")
+    try:
+        project = repo.create_project(project_name, body="将棋序盤知識整理アプリケーション開発プロジェクト")
+    except Exception as e:
+        print(f"プロジェクトの作成に失敗しました: {e}")
+        # プロジェクトが作成できなくても続行
+        project = None
 
 # マイルストーンとイシューの作成
 for milestone_data in project_structure['project']['milestones']:
