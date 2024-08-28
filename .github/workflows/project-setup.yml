@@ -24,6 +24,6 @@ jobs:
           
       - name: Create Milestones and Issues
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
         run: |
           python .github/scripts/create_project_structure.py
