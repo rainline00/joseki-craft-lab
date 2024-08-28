@@ -1,0 +1,29 @@
+name: Project Setup
+
+on:
+  push:
+    paths:
+      - '.github/project-structure.yml'
+  workflow_dispatch:
+
+jobs:
+  setup-project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyGithub PyYAML
+          
+      - name: Create Milestones and Issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python .github/scripts/create_project_structure.py
